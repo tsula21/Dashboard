@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRM</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dash_wrapper">
+      <button id="openButton"><i class="fa-solid fa-bars"></i></button>
+
+      <div id="blur" class="blur"></div>
+      <aside id="sideBar" class="hide">
+        <div class="sidebar_container">
+          <div class="logo_list_wrapper">
+            <div class="logo">
+              <img src="./assets/img/logo.svg" alt="" />
+              <span>Dashboard</span>
+              <p>v.01</p>
+            </div>
+
+            <ul>
+              <li class="customers-li">
+                <a href="/#">
+                  <div class="li_wrapper">
+                    <img
+                      class="icon-default"
+                      src="./assets/icons/key.svg"
+                      alt=""
+                    />
+                    <img
+                      class="icon-active"
+                      src="./assets/icons/key_white.svg"
+                      alt=""
+                    />
+                    <p>Dashboard</p>
+                  </div>
+                  <div></div>
+                </a>
+              </li>
+              <li class="customers-li">
+                <a href="/#">
+                  <div class="li_wrapper">
+                    <img
+                      class="icon-default"
+                      src="./assets/icons/product.svg"
+                      alt=""
+                    />
+                    <img
+                      class="icon-active"
+                      src="./assets/icons/product_white.svg"
+                      alt=""
+                    />
+
+                    <p>Product</p>
+                  </div>
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </li>
+              <li class="customers-li">
+                <a href="/#">
+                  <div class="li_wrapper">
+                    <img
+                      class="icon-default"
+                      src="./assets/icons/user.svg"
+                      alt=""
+                    />
+                    <img
+                      class="icon-active"
+                      src="./assets/icons/user_white.svg"
+                      alt=""
+                    />
+                    <p>Customers</p>
+                  </div>
+
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </li>
+              <li class="customers-li">
+                <a href="/#">
+                  <div href="/#" class="li_wrapper">
+                    <img
+                      class="icon-default"
+                      src="./assets/icons/wallet.svg"
+                      alt=""
+                    />
+                    <img
+                      class="icon-active"
+                      src="./assets/icons/wallet_white.svg"
+                      alt=""
+                    />
+                    <p>Income</p>
+                  </div>
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </li>
+              <li class="customers-li">
+                <a href="/#">
+                  <div class="li_wrapper">
+                    <img
+                      class="icon-default"
+                      src="./assets/icons/discount.svg"
+                      alt=""
+                    />
+                    <img
+                      class="icon-active"
+                      src="./assets/icons/discount_white.svg"
+                      alt=""
+                    />
+                    <p>Promote</p>
+                  </div>
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </li>
+              <li class="customers-li">
+                <a href="/#">
+                  <div class="li_wrapper">
+                    <img
+                      class="icon-default"
+                      src="./assets/icons/message.svg"
+                      alt=""
+                    />
+                    <img
+                      class="icon-active"
+                      src="./assets/icons/message_white.svg"
+                      alt=""
+                    />
+                    <p>Help</p>
+                  </div>
+                  <i class="fa-solid fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="customer">
+            <img src="./assets/img/evano.svg" alt="./assets/img/evano.svg" />
+            <div class="customer_details">
+              <h2>Evano</h2>
+              <p>Project Manager</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div class="content_wrapper">
+        <header>Hello Evano 👋🏼,</header>
+
+        <main>
+          <div class="header_tab">
+            <span>
+              <h2>All Customers</h2>
+              <p>Active Members</p>
+            </span>
+            <div class="search-container">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search" />
+            </div>
+          </div>
+          <div class="table_wrapper">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Customer Name</th>
+                  <th>Company</th>
+                  <th>Phone Number</th>
+                  <th>Email</th>
+                  <th>Country</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+
+          <div class="table_length">
+            <div class="table_info">Showing data 1 to 8 of 256K entries</div>
+
+            <div class="pagination"></div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
